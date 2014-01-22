@@ -1,0 +1,36 @@
+/* line 5, ../sass/style.scss */
+body {
+  background-color: #cccccc;
+  padding: 20px;
+  font-family: 'Actor' , sans-serif;
+}
+/* line 10, ../sass/style.scss */
+body header {
+  background-color: #003366;
+  padding: 15px 25px;
+}
+/* line 14, ../sass/style.scss */
+body header h1 {
+  font-size: 40px;
+  color: #cccccc;
+}
+
+/* line 21, ../sass/style.scss */
+.cols {
+  width: 50%;
+  display: inline;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 28, ../sass/style.scss */
+.colleagues {
+  @extends cols;
+  float: right;
+}
+
+/* line 32, ../sass/style.scss */
+.myinfo {
+  @extends cols;
+  float: left;
+}

@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>     
+	<link rel="stylesheet" href="stylesheets/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Actor' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/2.0/stylesheets/general_foundicons.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/2.0/stylesheets/social_foundicons.css">
+	<title>Identity Project</title>
+</head>
+
+<body>
+	<header>
+		<h1>Innovation Indentity</h1>
+	</header>	
+	<!-- LEFT DIV -->
+	<div class="cols">
+	<div class="myinfo">
+		<!-- top left card -->
+		<div class="card">
+			<img src="images/me.jpg" alt="erica fedden"/> 
+			<h1>Erica-Rose Fedden</h1>
+			<h3>Software Engineer</h3>
+			<p><i class="general foundicon-mail icon"><a class="icon" href="mailto:erica-rose.fedden@capgemini.com">
+			erica-rose.fedden@capgemini.com </a></i></p>
+			<p><i class="general foundicon-phone icon"> <a href="#"> 07814195141</a></i></p>	
+			<ul class="buttons">
+				<!--buttons -->
+				<li class="facebook">
+					<a href="https://www.facebook.com/"><i class="social foundicon-facebook"></i></a></li>
+				<li class="twitter">
+					<a href="https://twitter.com/"> <i class="social foundicon-twitter"></i></a></li>
+				<li class="google"> 
+					<a href="https://plus.google.com" ><i class="social foundicon-google-plus"></i></a></li>
+				<li class="linkedin"> 
+					<a href ="#" ><i class="social foundicon-linkedin"></i></a></li> 
+			</ul>	
+		</div>	
+
+		<!-- TODO: 
+		Please be careful with identation. Might seem trivial but makes huge difference to how easy it is to read code and maintain.
+		Also do not put a lot of elements in the same line since it makes it hard to read.
+		Better to nest and ident :-)
+		-->
+		<!-- backgorund info -- > 
+		<ul class="background">
+			<!-- hobbies  -->		
+			<li class="hobbies">
+				<h3>Your hobbies/ Interests</h3>
+				<ul>
+					<li>Singing</li>
+					<li>Dancing</li>
+					<li>Swimming</li>
+					<li>Tennis</li>
+				</ul>
+			</li>
+			<!-- video --> 
+			<li class="vid">
+				<h2>Your Favourite Video</h2>
+					<!-- TODO:
+					There are a couple more supported video formats apart from webm. Usually you write a video tag and you nest 3 source tags inside (one source tag per video format)
+					Read here for more details: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video
+					-->
+				<video src="http://video.webmfiles.org/big-buck-bunny_trailer.webm" controls autoplay></video> 
+			</li>
+			<!-- form  --> 	
+			<!-- TODO: 
+			Don't break the semantics of your list. You had a ul with a lot of lis.
+			Here you put the li to be children of your form element which is wrong.
+			The form should be nested inside the li.
+		-->
+			<form>
+				<li class="education">
+					<h1> Your Background</h1>
+					<label>Education: </label>
+					<select id = "dropdown">
+						<option value = "1">GSCE</option>
+						<option value = "2">Alevel</option>
+						<option value = "3">Degree</option>               
+					</select>
+					<table border="0" class="checkboxes">
+						<tr>
+						<td><input type="checkbox" name="css" id="css" class="gap"/>HTML</td>
+						<td><input type="checkbox" name="css" id="css" class="gap" />Javascript</td>
+						<td><input type="checkbox" name="css" id="css" class="gap" />Python</td>
+						<td><input type="checkbox" name="css" id="css" class="gap" />Java</td>
+						</tr>
+						<tr>
+						<td><input type="checkbox" name="css" id="css" class="gap"/>CSS</td>
+						<td><input type="checkbox" name="css" id="css" class="gap"/>PHP</td>
+						<td><input type="checkbox" name="css" id="css" class="gap"/>SQL</td>
+						<td><input type="checkbox" name="css" id="css" class="gap"/>C++</td>
+						</tr>
+					</table>
+					<textarea id="comments" name="comments" placeholder="Tell Us About Your Past Project..."></textarea>
+					<!-- TODO: 
+					Why do u need the p around the input here? Don't think it's necessary
+					-->
+					<p id="ok"><input type="submit" value="OK!"/></p> 	
+				</li>
+			</form>
+		</ul>
+		<!-- quote -->
+		<div class="picture">
+			<!-- TODO:
+			P is valid and it works. But using new HTML5 elements this is better to be a blockquote
+			(better semantics)
+			-->
+			<p class="text">"Everything happens for a reason..."</p>
+		</div>
+	</div> <!-- end of left div --> 
+
+		<!-- right div  -->
+		<!-- top right card --> 		
+
+		<!-- TODO:
+		This section can be slightly refactored. I would group all the info apart from your img
+		to a separate div. Then treat the img and the new div the way you created the two columns.
+		So they will sit one next to each other (at the moment the img flows over the info)
+		Take a quick look at how Renee did this and also come to me if you have any questions.
+	-->
+	<ul class="colleagues">
+		<li class="card">
+			<img src="images/renee.jpg" alt="renee blanchard"/> 
+			<h1> Renee Blanchard</h1>
+			<h3> Software Engineer</h3>
+			<p><i class="general foundicon-mail icon"><a class="icon" href="mailto:renee.blanchard@capgemini.com">
+			erica-rose.fedden@capgemini.com </a></i></p>
+
+		<!-- TODO:
+			Similar to the mailto in the href there is a tel attribute. This will allow you to
+			tap on the link in a mobile device and try to call it.
+			http://stackoverflow.com/questions/17219688/href-tel-and-mobile-numbers
+		--> 
+			<p><i class="general foundicon-phone icon"> <a href="#"> 07814195141</a></i></p>	
+		<ul class="buttons">				
+			<li class="facebook ">
+				<a href="https://www.facebook.com/"><i class="social foundicon-facebook"></i></a></li>
+			<li class="twitter ">
+				<a href="https://twitter.com/"><i class="social foundicon-twitter"></i></a></li>
+			<li class="google"> 
+				<a href="https://plus.google.com"><i class="social foundicon-google-plus"></i></a></li>
+			<li class="linkedin"><a href ="#"><i class="social foundicon-linkedin"></i></a></li> 
+		</ul>	
+		</li>			
+	 <!-- next right card 2  -->	
+		<li class="card">
+				<img src="images/ed.jpg" alt="ed demott"/> 
+				<h1>Ed  De Mott</h1>
+				<h3>Software Engineer</h3>
+				<p><i class="general foundicon-mail icon"><a class="icon" href="mailto:erica-rose.fedden@capgemini.com">
+		ed-DeMott.fedden@capgemini.com </a></i></p>
+				<p><i class="general foundicon-phone icon"> <a href="#"> 07814195141</a></i></p>	
+			<ul class="buttons">
+			<!--buttons -->
+			<li class="facebook">
+				<a href="https://www.facebook.com/"><i class="social foundicon-facebook"></i></a></li>
+			<li class="twitter">
+				<a href="https://twitter.com/"><i class="social foundicon-twitter"></i></a></li>
+			<li class="google"> 
+				<a href="https://plus.google.com"><i class="social foundicon-google-plus"></i></a></li>
+			<li class="linkedin"><a href ="#" ><i class="social foundicon-linkedin"></i></a></li> 
+			</ul>	
+		</li>	
+		<!-- card 3 -->
+		<li class="card">
+				<img src="images/ben.jpg" alt="ben mcgeachy"/> 
+				<h1>Ben McGeachy</h1>
+				<h3>Software Engineer</h3>
+				<p><i class="general foundicon-mail icon"><a class="icon" href="mailto:ben.mcgeachy@capgemini.com">
+		ben-mcgeachy@capgemini.com </a></i></p>
+				<p><i class="general foundicon-phone icon"><a href="#">07814195141</a></i></p>	
+
+		<ul class="buttons">
+			<!--buttons -->
+			<li class="facebook ">
+				<a href="https://www.facebook.com/"><i class="social foundicon-facebook"></i></a></li>
+			<li class="twitter ">
+				<a href="https://twitter.com/"><i class="social foundicon-twitter"></i></a></li>
+			<li class="google"> 
+				<a href="https://plus.google.com"><i class="social foundicon-google-plus"></i></a></li>
+			<li class="linkedin"><a href ="#"><i class="social foundicon-linkedin"></i></a></li> 
+		</ul>	
+		</li>	
+		<!-- card 4 --> 
+		<li class="card">
+				<img src="images/adam.jpg" alt="adam stacey"/> 
+				<h1>Adam Stacey</h1>
+				<h3>Software Engineer</h3>
+				<p><i class="general foundicon-mail icon"><a class="icon" href="mailto:adam.stacey@capgemini.com">
+		adam.stacey@capgemini.com</a></i></p>
+				<p><i class="general foundicon-phone icon"><a href="#">07814195141</a></i></p>	
+
+		<ul class="buttons">
+			<!--buttons -->
+			<li class="facebook ">
+				<a href="https://www.facebook.com/"><i class="social foundicon-facebook"></i></a></li>
+			<li class="twitter ">
+				<a href="https://twitter.com/"> <i class="social foundicon-twitter"></i></a></li>
+			<li class="google "> 
+				<a href="https://plus.google.com" ><i class="social foundicon-google-plus"></i></a></li>
+			<li class="linkedin"> <a href ="#" > <i class="social foundicon-linkedin"></i></a></li> 
+		</ul>	
+		</li>	
+
+		<!-- card 5 --> 
+			<li class="card">
+				<img src="images/lefty.jpg" alt="Lefteris Paraskevas"/> 
+				<h1>Lefteris Paraskevas</h1>
+				<h3>Software Engineer </h3>
+				<p>	<i class="general foundicon-mail icon"><a class="icon" href="mailto:erica-rose.fedden@capgemini.com">
+		lefteris.paraskevas@capgemini.com </a></i></p>
+				<p><i class="general foundicon-phone icon"><a href="#">07814195141</a></i></p>	
+
+		<ul class="buttons">
+			<!--buttons -->
+			<li class="facebook ">
+				<a href="https://www.facebook.com/"><i class="social foundicon-facebook"></i></a></li>
+			<li class="twitter ">
+				<a href="https://twitter.com/"> <i class="social foundicon-twitter"></i></a></li>
+			<li class="google "> 
+				<a href="https://plus.google.com" ><i class="social foundicon-google-plus"></i></a></li>
+			<li class="linkedin"> <a href ="#" > <i class="social foundicon-linkedin"></i></a></li> 
+		</ul>	
+			</li>
+	</ul>
+</div>
+
+		<!-- footer --> 
+	<footer> <h2>Created by Erica-Rose Fedden </h2> </footer> 
+</body>
+</html>
+
