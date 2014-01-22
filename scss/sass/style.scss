@@ -1,9 +1,9 @@
-$background: #ccc;
+$background-heading: #ccc;
 $text-color: #036;
-
+$card-color: #369;
 
 body{
-	background-color: $background;
+	background-color: $background-heading;
 	padding: 20px;
 	font-family: 'Actor' , sans-serif;
 
@@ -13,11 +13,10 @@ body{
 
 		h1{
 			font-size: 40px;
-			color: $background;
+			color: $background-heading;
 		}
 	}
 }
-
 .cols {
 	width: 50%;
 	display: inline;
@@ -32,4 +31,30 @@ body{
 .myinfo{
 	@extends cols;
 	float: left
+}
+
+// information card 
+
+.card {
+	background-color: $card-color;
+	
+	overflow: hidden;
+
+	img {
+		width: 200px;
+		height: 200px;
+		float: left;
+		padding: 30px;
+		}
+	
+	h1{
+		color: background-heading;
+		font-size: 35px;
+	}
+
+
+// footer 
+footer{
+	clear: both;
+}
 }

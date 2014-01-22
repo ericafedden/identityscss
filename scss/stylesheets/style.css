@@ -15,7 +15,7 @@ body header h1 {
   color: #cccccc;
 }
 
-/* line 21, ../sass/style.scss */
+/* line 20, ../sass/style.scss */
 .cols {
   width: 50%;
   display: inline;
@@ -23,14 +23,36 @@ body header h1 {
   margin: 0px;
 }
 
-/* line 28, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
 .colleagues {
   @extends cols;
   float: right;
 }
 
-/* line 32, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 .myinfo {
   @extends cols;
   float: left;
+}
+
+/* line 38, ../sass/style.scss */
+.card {
+  background-color: #336699;
+  overflow: hidden;
+}
+/* line 43, ../sass/style.scss */
+.card img {
+  width: 200px;
+  height: 200px;
+  float: left;
+  padding: 30px;
+}
+/* line 50, ../sass/style.scss */
+.card h1 {
+  color: background-heading;
+  font-size: 35px;
+}
+/* line 57, ../sass/style.scss */
+.card footer {
+  clear: both;
 }
