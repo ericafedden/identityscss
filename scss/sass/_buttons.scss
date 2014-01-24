@@ -1,0 +1,53 @@
+$text-color: white;
+$card-font: 20px;
+
+.buttons{
+	list-style: none;
+
+	li{
+		padding-top: 5px;
+		text-decoration: none;
+	}
+
+	.foundicon-twitter, .foundicon-facebook, .foundicon-linkedin, .foundicon-google-plus {
+		color: $text-color;
+		font-size: $card-font;
+		border: none;
+	}
+	a {
+	padding-top: 10px;	
+	}
+
+	.facebook {
+	float: left;
+	color: white;		
+	text-align: center;	
+	border-radius: 5px;
+	margin: 0px 5px;	
+	width: 70px;
+	height: 40px;
+	font-size: $card-font;
+	background: #23476a;		
+	padding-right: 1%;
+	}
+
+.twitter {	
+	@extend .facebook;
+	background: #00abf0;		
+	}
+
+.google {
+	@extend .facebook;
+	background: #a92a24;	
+	}
+
+.linkedin{
+	@extend .facebook;
+	background: black;	
+	padding-right: 0px;	
+	}
+
+.facebook:hover, .twitter:hover, .google:hover, .linkedin:hover {		
+	border: 1px solid white;
+	}
+}

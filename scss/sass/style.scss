@@ -1,12 +1,18 @@
+@import 'buttons';
+@import 'infocard';
+@import 'backgroundinfo';
+
 $background-heading: #ccc;
 $text-color: #036;
 $card-color: #369;
+$link-color: #d5a725;
+$small-text: 25px;
 
 body{
-	background-color: $background-heading;
-	padding: 20px;
+	background-color: $background-heading;	
 	font-family: 'Actor' , sans-serif;
-
+	padding: 20px;
+	
 	header{
 		background-color: $text-color;
 		padding: 15px 25px;
@@ -17,44 +23,26 @@ body{
 		}
 	}
 }
-.cols {
+.colleagues, .myinfo {
 	width: 50%;
 	display: inline;
-	padding: 0px;
-	margin: 0px;
-}
-
-.colleagues{
-	@extends cols;
+	padding: 0px;	
+	margin-bottom: 0px;	
+	margin-top: 10px;
 	float: right;
+	list-style: none;
 }
 .myinfo{
-	@extends cols;
-	float: left
+	@extend .colleagues;
+	float: left;
 }
 
-// information card 
-
-.card {
-	background-color: $card-color;
-	
-	overflow: hidden;
-
-	img {
-		width: 200px;
-		height: 200px;
-		float: left;
-		padding: 30px;
-		}
-	
-	h1{
-		color: background-heading;
-		font-size: 35px;
-	}
-
-
-// footer 
 footer{
 	clear: both;
+	background: $text-color;
+	color: $background-heading;
+	padding: 15px;
+	text-align: right;	
+
 }
-}
+

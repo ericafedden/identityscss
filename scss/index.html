@@ -14,8 +14,8 @@
 		<h1>Innovation Indentity</h1>
 	</header>	
 	<!-- LEFT DIV -->
-	<div class="cols">
-	<div class="myinfo">
+	
+	<div class="myinfo mycard">
 		<!-- top left card -->
 		<div class="card">
 			<img src="images/me.jpg" alt="erica fedden"/> 
@@ -69,11 +69,12 @@
 			Here you put the li to be children of your form element which is wrong.
 			The form should be nested inside the li.
 		-->
-			<form>
+			
 				<li class="education">
+					<form>
 					<h1> Your Background</h1>
 					<label>Education: </label>
-					<select id = "dropdown">
+					<select class= "dropdown">
 						<option value = "1">GSCE</option>
 						<option value = "2">Alevel</option>
 						<option value = "3">Degree</option>               
@@ -95,10 +96,10 @@
 					<textarea id="comments" name="comments" placeholder="Tell Us About Your Past Project..."></textarea>
 					<!-- TODO: 
 					Why do u need the p around the input here? Don't think it's necessary
-					-->
-					<p id="ok"><input type="submit" value="OK!"/></p> 	
+				--><input type="submit" class="ok" value="OK!"/>
+				</form>		  	
 				</li>
-			</form>
+			
 		</ul>
 		<!-- quote -->
 		<div class="picture">
@@ -106,7 +107,7 @@
 			P is valid and it works. But using new HTML5 elements this is better to be a blockquote
 			(better semantics)
 			-->
-			<p class="text">"Everything happens for a reason..."</p>
+			<blockquote>"Everything happens for a reason..."</blockquote>
 		</div>
 	</div> <!-- end of left div --> 
 
@@ -120,7 +121,7 @@
 		Take a quick look at how Renee did this and also come to me if you have any questions.
 	-->
 	<ul class="colleagues">
-		<li class="card">
+		<li class="card firstcard">
 			<img src="images/renee.jpg" alt="renee blanchard"/> 
 			<h1> Renee Blanchard</h1>
 			<h3> Software Engineer</h3>
@@ -224,7 +225,7 @@
 		</ul>	
 			</li>
 	</ul>
-</div>
+
 
 		<!-- footer --> 
 	<footer> <h2>Created by Erica-Rose Fedden </h2> </footer> 

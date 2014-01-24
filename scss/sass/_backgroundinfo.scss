@@ -1,0 +1,85 @@
+$background-heading: #ccc;
+$text-color: #036;
+$card-color: #369;
+$link-color: #d5a725;
+$small-text: 25px;
+
+.hobbies{
+	font-size: $small-text;
+	color: $background-heading;
+	background-color: $card-color;	
+	border-bottom: 5px solid $background-heading;
+	padding: 15px 30px;
+
+	li{
+		list-style: none;
+	}
+}
+// video 
+.vid{
+	@extend .hobbies;
+
+	h2{
+		color: $background-heading;		
+	}
+	video{
+		width: 100%;
+		height: auto;
+	}
+}
+// form 
+.education {
+	@extend .hobbies;
+
+	h1{
+		font-size: 22px;
+		color: $background-heading;
+	}
+
+	.dropdown{
+	width: 60%;
+}
+	label{
+		font-size: 19px;		
+	}
+	p{
+		margin-left: 100px;
+	}
+	.checkboxes{
+		width: 90%;
+		padding-left: 5%;
+		margin-bottom: 20px;
+		margin-top: 10px;
+	}
+
+	.ok{
+		width: 40%;
+		margin-left: 30%;
+		display: block;
+		}
+
+textarea{
+	width: 90%;
+	height: 60px;
+	margin-left: 20px;
+}
+
+}
+// quote
+.picture {
+	background: url(../images/leaf.jpg);
+	background-repeat: no-repeat;
+	height: 100px;
+	border-bottom: 2px solid $background-heading;
+	padding: 15px 30px;
+}
+	blockquote {
+		letter-spacing: -1px;
+		font-size: 30px;
+		position: absolute;
+		margin-left: 160px;
+		background-color: rgba(0,0,0, .5);
+		width: 20%;
+		color: white;
+	}
+

@@ -1,58 +1,218 @@
-/* line 5, ../sass/style.scss */
-body {
-  background-color: #cccccc;
-  padding: 20px;
-  font-family: 'Actor' , sans-serif;
+/* line 4, ../sass/_buttons.scss */
+.buttons {
+  list-style: none;
 }
-/* line 10, ../sass/style.scss */
-body header {
-  background-color: #003366;
-  padding: 15px 25px;
+/* line 7, ../sass/_buttons.scss */
+.buttons li {
+  padding-top: 5px;
+  text-decoration: none;
 }
-/* line 14, ../sass/style.scss */
-body header h1 {
-  font-size: 40px;
-  color: #cccccc;
+/* line 12, ../sass/_buttons.scss */
+.buttons .foundicon-twitter, .buttons .foundicon-facebook, .buttons .foundicon-linkedin, .buttons .foundicon-google-plus {
+  color: white;
+  font-size: 20px;
+  border: none;
 }
-
-/* line 20, ../sass/style.scss */
-.cols {
-  width: 50%;
-  display: inline;
-  padding: 0px;
-  margin: 0px;
+/* line 17, ../sass/_buttons.scss */
+.buttons a {
+  padding-top: 10px;
 }
-
-/* line 27, ../sass/style.scss */
-.colleagues {
-  @extends cols;
-  float: right;
-}
-
-/* line 31, ../sass/style.scss */
-.myinfo {
-  @extends cols;
+/* line 21, ../sass/_buttons.scss */
+.buttons .facebook, .buttons .twitter, .buttons .google, .buttons .linkedin {
   float: left;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0px 5px;
+  width: 70px;
+  height: 40px;
+  font-size: 20px;
+  background: #23476a;
+  padding-right: 1%;
+}
+/* line 34, ../sass/_buttons.scss */
+.buttons .twitter {
+  background: #00abf0;
+}
+/* line 39, ../sass/_buttons.scss */
+.buttons .google {
+  background: #a92a24;
+}
+/* line 44, ../sass/_buttons.scss */
+.buttons .linkedin {
+  background: black;
+  padding-right: 0px;
+}
+/* line 50, ../sass/_buttons.scss */
+.buttons .facebook:hover, .buttons .twitter:hover, .buttons .google:hover, .buttons .linkedin:hover, .buttons .twitter:hover, .buttons .google:hover, .buttons .linkedin:hover {
+  border: 1px solid white;
 }
 
-/* line 38, ../sass/style.scss */
+/* line 6, ../sass/_infocard.scss */
 .card {
   background-color: #336699;
   overflow: hidden;
+  margin-bottom: 35px;
+  border: 5px solid #ccc;
+  border-top: 0px;
 }
-/* line 43, ../sass/style.scss */
+/* line 13, ../sass/_infocard.scss */
 .card img {
   width: 200px;
   height: 200px;
   float: left;
   padding: 30px;
 }
-/* line 50, ../sass/style.scss */
+/* line 20, ../sass/_infocard.scss */
 .card h1 {
-  color: background-heading;
+  color: #cccccc;
   font-size: 35px;
 }
-/* line 57, ../sass/style.scss */
-.card footer {
+/* line 25, ../sass/_infocard.scss */
+.card h3 {
+  color: background-heading;
+  padding-top: 0px;
+}
+/* line 30, ../sass/_infocard.scss */
+.card .foundicon-mail, .card .foundicon-phone a {
+  color: #d5a725;
+}
+/* line 34, ../sass/_infocard.scss */
+.card .icon {
+  color: #d5a725;
+}
+/* line 38, ../sass/_infocard.scss */
+.card .mail a {
+  font-size: 20px;
+  padding-left: 10px;
+}
+/* line 43, ../sass/_infocard.scss */
+.card a {
+  text-decoration: none;
+}
+/* line 47, ../sass/_infocard.scss */
+.card a:hover {
+  color: #ffdead;
+}
+
+/* line 7, ../sass/_backgroundinfo.scss */
+.hobbies, .vid, .education {
+  font-size: 25px;
+  color: #cccccc;
+  background-color: #336699;
+  border-bottom: 5px solid #cccccc;
+  padding: 15px 30px;
+}
+/* line 14, ../sass/_backgroundinfo.scss */
+.hobbies li, .vid li, .education li {
+  list-style: none;
+}
+
+/* line 22, ../sass/_backgroundinfo.scss */
+.vid h2 {
+  color: #cccccc;
+}
+/* line 25, ../sass/_backgroundinfo.scss */
+.vid video {
+  width: 100%;
+  height: auto;
+}
+
+/* line 34, ../sass/_backgroundinfo.scss */
+.education h1 {
+  font-size: 22px;
+  color: #cccccc;
+}
+/* line 39, ../sass/_backgroundinfo.scss */
+.education .dropdown {
+  width: 60%;
+}
+/* line 42, ../sass/_backgroundinfo.scss */
+.education label {
+  font-size: 19px;
+}
+/* line 45, ../sass/_backgroundinfo.scss */
+.education p {
+  margin-left: 100px;
+}
+/* line 48, ../sass/_backgroundinfo.scss */
+.education .checkboxes {
+  width: 90%;
+  padding-left: 5%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+/* line 55, ../sass/_backgroundinfo.scss */
+.education .ok {
+  width: 40%;
+  margin-left: 30%;
+  display: block;
+}
+/* line 61, ../sass/_backgroundinfo.scss */
+.education textarea {
+  width: 90%;
+  height: 60px;
+  margin-left: 20px;
+}
+
+/* line 69, ../sass/_backgroundinfo.scss */
+.picture {
+  background: url(../images/leaf.jpg);
+  background-repeat: no-repeat;
+  height: 100px;
+  border-bottom: 2px solid #cccccc;
+  padding: 15px 30px;
+}
+
+/* line 76, ../sass/_backgroundinfo.scss */
+blockquote {
+  letter-spacing: -1px;
+  font-size: 30px;
+  position: absolute;
+  margin-left: 160px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 20%;
+  color: white;
+}
+
+/* line 11, ../sass/style.scss */
+body {
+  background-color: #cccccc;
+  font-family: 'Actor' , sans-serif;
+  padding: 20px;
+}
+/* line 16, ../sass/style.scss */
+body header {
+  background-color: #003366;
+  padding: 15px 25px;
+}
+/* line 20, ../sass/style.scss */
+body header h1 {
+  font-size: 40px;
+  color: #cccccc;
+}
+
+/* line 26, ../sass/style.scss */
+.colleagues, .myinfo, .myinfo {
+  width: 50%;
+  display: inline;
+  padding: 0px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  float: right;
+  list-style: none;
+}
+
+/* line 35, ../sass/style.scss */
+.myinfo {
+  float: left;
+}
+
+/* line 40, ../sass/style.scss */
+footer {
   clear: both;
+  background: #003366;
+  color: #cccccc;
+  padding: 15px;
+  text-align: right;
 }

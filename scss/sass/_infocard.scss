@@ -1,0 +1,53 @@
+$background-heading: #ccc;
+$text-color: #036;
+$card-color: #369;
+$link-color: #d5a725;
+
+.card {	
+	background-color: $card-color;	
+	overflow: hidden;
+	margin-bottom: 35px;
+	border: 5px solid #ccc;
+	border-top: 0px;
+
+	img {
+		width: 200px;
+		height: 200px;
+		float: left;
+		padding: 30px;
+		}
+	
+	h1{
+		color: $background-heading;
+		font-size: 35px;
+	}
+
+	h3{
+		color: background-heading;
+		padding-top: 0px;
+		}	
+
+	.foundicon-mail, .foundicon-phone a {
+		color: $link-color;
+
+	}
+	.icon{
+		color: $link-color;
+	}
+
+	.mail a {
+		font-size: 20px;
+		padding-left: 10px;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	a:hover{
+		color: #ffdead;
+	}
+		
+	}
+
+
